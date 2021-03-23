@@ -3,11 +3,13 @@ const app = require('../src/app')
 
 describe('test app rest endpoints', () => {
 
-    test('It should return Hello World', async () => {
+
+    test('It should return Hello World', async() => {
         const response = await request(app).get('/')
 
         expect(response.statusCode).toBe(200)
-        expect(response.body).toEqual('Hello 🍌')
+        expect(response.body).toEqual('Hello World!!!')
+
     })
 
 })
